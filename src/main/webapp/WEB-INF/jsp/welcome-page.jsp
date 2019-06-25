@@ -12,6 +12,7 @@
 </head>
 <body>
 <h1>Welcome to the world of SPRING</h1>
-<h2>${param.studentName}</h2>
+<%--<h2>${param.studentName}</h2>--%>
+<h2>${sName}</h2>
 </body>
 </html>

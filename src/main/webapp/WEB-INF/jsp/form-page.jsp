@@ -11,7 +11,7 @@
     <title>Form</title>
 </head>
 <body>
-<form action="processForm" method="get">
+<form action="processFormVersionTwo" method="get">
     <input type="text" name="studentName" placeholder="Whats your name">
     <input type="submit">
 </form>
