@@ -3,6 +3,7 @@ package com.syed.spring;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -30,6 +31,12 @@ public class HomeController {
         studentName = studentName.toUpperCase();
         String result = "Yoyo !! " + studentName;
         model.addAttribute("sName", result);
+        return "welcome-page";
+    }
+
+    @RequestMapping("/processFormVersionThree")
+    public String letsShoutAgain(@RequestParam("studentName") String name, Model model){
+        model.addAttribute("sName", name);
         return "welcome-page";
     }
 }
