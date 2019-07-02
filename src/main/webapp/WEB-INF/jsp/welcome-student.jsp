@@ -12,8 +12,9 @@
 </head>
 <body>
     <h1>Welcome ${student.firstName}</h1>
-    <h2>${student.firstName}</h2>
-    <h2>${student.lastName}</h2>
-    <h2>${student.age}</h2>
+    <h2>First name: ${student.firstName}</h2>
+    <h2>Last name: ${student.lastName}</h2>
+    <h2>Age: ${student.age}</h2>
+    <h2>Country: ${student.country}</h2>
 </body>
 </html>
