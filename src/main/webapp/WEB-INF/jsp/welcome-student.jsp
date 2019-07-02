@@ -16,5 +16,6 @@
     <h2>Last name: ${student.lastName}</h2>
     <h2>Age: ${student.age}</h2>
     <h2>Country: ${student.country}</h2>
+    <h2>favouriteLanguage: ${student.favouriteLanguage}</h2>
 </body>
 </html>

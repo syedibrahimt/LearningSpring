@@ -25,9 +25,8 @@
     </form:select>
     <br>
     Favourite Language
-    <form:select path="country">
-        <form:options items="${student.countries}"/>
-    </form:select>
+    <form:radiobutton path="favouriteLanguage" label="Java" value="java"/>
+    <form:radiobutton path="favouriteLanguage" label="Python" value="Python"/>
     <br>
     <input type="submit" value="Submit">
 </form:form>
