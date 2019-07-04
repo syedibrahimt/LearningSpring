@@ -1,5 +1,6 @@
 package com.syed.spring;
 
+import java.util.Arrays;
 import java.util.LinkedHashMap;
 
 public class Student {
@@ -9,6 +10,15 @@ public class Student {
     private String country;
     private LinkedHashMap<String, String> countries;
     private String favouriteLanguage;
+    private String[] operatingSystems;
+
+    public String[] getOperatingSystems() {
+        return operatingSystems;
+    }
+
+    public void setOperatingSystems(String[] operatingSystems) {
+        this.operatingSystems = operatingSystems;
+    }
 
     public Student() {
         countries = new LinkedHashMap<>();
@@ -33,18 +43,6 @@ public class Student {
 
     public void setCountries(LinkedHashMap<String, String> countries) {
         this.countries = countries;
-    }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", age=" + age +
-                ", country='" + country + '\'' +
-                ", countries=" + countries +
-                ", favouriteLanguage='" + favouriteLanguage + '\'' +
-                '}';
     }
 
     public String getCountry() {
@@ -79,4 +77,17 @@ public class Student {
         this.age = age;
     }
 
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", country='" + country + '\'' +
+                ", countries=" + countries +
+                ", favouriteLanguage='" + favouriteLanguage + '\'' +
+                ", operatingSystems=" + Arrays.toString(operatingSystems) +
+                '}';
+    }
 }

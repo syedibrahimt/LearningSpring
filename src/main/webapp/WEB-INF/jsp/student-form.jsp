@@ -28,6 +28,11 @@
     <form:radiobutton path="favouriteLanguage" label="Java" value="java"/>
     <form:radiobutton path="favouriteLanguage" label="Python" value="Python"/>
     <br>
+    Operating System
+    <form:checkbox path="operatingSystems" label="Windows" value="Windows"/>
+    <form:checkbox path="operatingSystems" label="Linux" value="Linux"/>
+    <form:checkbox path="operatingSystems" label="Mac" value="Mac"/>
+    <br>
     <input type="submit" value="Submit">
 </form:form>
 </body>
